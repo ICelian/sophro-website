@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import AnimatedTextBlock from '@/components/AnimatedTextBlock';
 import { ArrowDown, MessageCircle } from 'lucide-react';
+import Image from "next/image";
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -79,15 +80,16 @@ export default function HeroSection() {
               transition={{ duration: 0.3 }}
             >
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-emerald-200 to-teal-300 shadow-2xl flex items-center justify-center border-4 border-white">
-                <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-stone-200 flex items-center justify-center text-stone-500">
+                <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full overflow-hidden bg-stone-200 flex items-center justify-center text-stone-500">
                   <div className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-4 bg-stone-300 rounded-full flex items-center justify-center">
-                      <svg className="w-10 h-10 text-stone-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <p className="text-sm font-medium">Photo de Maria</p>
-                    <p className="text-xs text-stone-400 mt-1">À remplacer par votre photo</p>
+                      {/*<div className="w-20 h-20 mx-auto mb-4 bg-stone-300 rounded-full flex items-center justify-center">*/}
+                      <Image
+                          src="/profile.jpg"
+                          width={500}
+                          height={500}
+                          alt="Picture of the author"
+                      />
+                    {/*</div>*/}
                   </div>
                 </div>
               </div>
@@ -105,17 +107,6 @@ export default function HeroSection() {
             </motion.div>
           </AnimatedTextBlock>
         </div>
-
-        <AnimatedTextBlock delay={1.2} className="text-center mt-16">
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="flex flex-col items-center text-stone-400"
-          >
-            <span className="text-sm mb-2">Découvrez mon approche</span>
-            <ArrowDown className="w-5 h-5" />
-          </motion.div>
-        </AnimatedTextBlock>
       </div>
     </section>
   );
