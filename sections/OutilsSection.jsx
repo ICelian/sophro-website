@@ -96,7 +96,6 @@ export default function OutilsSection() {
           </p>
         </AnimatedTextBlock>
 
-        {/* Outil 1 - Échelle émotionnelle */}
         <AnimatedTextBlock delay={0.3} className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -110,7 +109,6 @@ export default function OutilsSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Outil 2 - Sémantique */}
         <AnimatedTextBlock delay={0.4} className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
@@ -124,7 +122,6 @@ export default function OutilsSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Outil 3 - Modèle Spinnler */}
         <AnimatedTextBlock delay={0.5} className="mb-12">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
@@ -138,7 +135,6 @@ export default function OutilsSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Audio-thérapie */}
         <AnimatedTextBlock delay={0.6} className="mb-12">
           <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-200">
             <div className="flex items-center gap-4 mb-6">
@@ -155,7 +151,6 @@ export default function OutilsSection() {
           </div>
         </AnimatedTextBlock>
 
-        {/* Call to action */}
         <AnimatedTextBlock delay={0.8} className="text-center mt-16">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button

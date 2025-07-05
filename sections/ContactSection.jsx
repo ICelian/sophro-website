@@ -1,5 +1,3 @@
-'use client';
-
 import AnimatedTextBlock from '@/components/AnimatedTextBlock';
 import ContactForm from '@/components/ContactForm';
 

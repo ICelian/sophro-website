@@ -30,7 +30,6 @@ export default function TarifsSection() {
           </p>
         </AnimatedTextBlock>
 
-        {/* Pricing Card */}
         <AnimatedTextBlock delay={0.4} className="flex justify-center mb-12">
           <motion.div
             whileHover={{ scale: 1.02, y: -5 }}
@@ -89,7 +88,6 @@ export default function TarifsSection() {
           </motion.div>
         </AnimatedTextBlock>
 
-        {/* Additional Information */}
         <AnimatedTextBlock delay={0.8}>
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-emerald-200 shadow-lg">
             <h3 className="text-xl font-semibold text-emerald-700 mb-4 text-center">
@@ -106,7 +104,6 @@ export default function TarifsSection() {
           </div>
         </AnimatedTextBlock>
 
-        {/* Benefits Grid */}
         <AnimatedTextBlock delay={1} className="mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div 

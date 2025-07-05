@@ -15,7 +15,6 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          {/* Left column - Text content */}
           <div className="space-y-8">
             <AnimatedTextBlock delay={0.2}>
               <motion.h1 
@@ -73,7 +72,6 @@ export default function HeroSection() {
             </AnimatedTextBlock>
           </div>
 
-          {/* Right column - Photo */}
           <AnimatedTextBlock delay={1} className="flex justify-center lg:justify-end">
             <motion.div
               className="relative"
@@ -94,7 +92,6 @@ export default function HeroSection() {
                 </div>
               </div>
               
-              {/* Decorative elements */}
               <motion.div
                 className="absolute -top-4 -right-4 w-8 h-8 bg-emerald-400 rounded-full opacity-60"
                 animate={{ y: [0, -10, 0] }}
@@ -109,7 +106,6 @@ export default function HeroSection() {
           </AnimatedTextBlock>
         </div>
 
-        {/* Scroll indicator */}
         <AnimatedTextBlock delay={1.2} className="text-center mt-16">
           <motion.div
             animate={{ y: [0, 10, 0] }}

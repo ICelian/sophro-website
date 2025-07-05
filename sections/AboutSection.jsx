@@ -37,7 +37,6 @@ export default function AboutSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Key points */}
         <AnimatedTextBlock delay={0.4}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <motion.div 
@@ -84,7 +83,6 @@ export default function AboutSection() {
           </div>
         </AnimatedTextBlock>
 
-        {/* Call to action */}
         <AnimatedTextBlock delay={0.6} className="text-center mt-16">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button

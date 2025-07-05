@@ -57,7 +57,6 @@ export default function ParcoursSection() {
     <section id="parcours" className="py-20 bg-gradient-to-br from-stone-50 via-white to-emerald-25">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Mon Parcours */}
         <AnimatedTextBlock delay={0.2} className="text-center mb-16">
           <AnimatedTitle
             title="MON PARCOURS"
@@ -66,7 +65,6 @@ export default function ParcoursSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Formation highlights */}
         <AnimatedTextBlock delay={0.4}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 mb-16">
             <motion.div 
@@ -113,7 +111,6 @@ export default function ParcoursSection() {
           </div>
         </AnimatedTextBlock>
 
-        {/* Mon Éthique */}
         <AnimatedTextBlock delay={0.6} className="text-center mb-16">
           <AnimatedTitle
             title="MON ÉTHIQUE"
@@ -122,7 +119,6 @@ export default function ParcoursSection() {
           />
         </AnimatedTextBlock>
 
-        {/* Call to action */}
         <AnimatedTextBlock delay={0.8} className="text-center mt-16">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button

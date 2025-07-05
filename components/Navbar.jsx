@@ -21,7 +21,6 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Determine active section
       const sections = navItems.map(item => item.href.slice(1));
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
