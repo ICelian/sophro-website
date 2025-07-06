@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-removebg.png" />
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-stone-50`}>
         {children}

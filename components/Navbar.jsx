@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import Image from "next/image";
 
 const navItems = [
   { label: 'Accueil', href: '#accueil' },
@@ -64,7 +65,12 @@ export default function Navbar() {
             className="text-xl font-bold text-emerald-700"
             whileHover={{ scale: 1.05 }}
           >
-            Maria LOPEZ
+            <Image
+                src="/logo-removebg.png"
+                width={36}
+                height={36}
+                alt="logo"
+            />
           </motion.div>
 
           <div className="hidden md:flex space-x-1">

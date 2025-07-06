@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <h2 className="text-xl lg:text-2xl text-stone-700 font-medium">
                   Aidante en écoute émotionnelle et connaissance de soi
                 </h2>
-                <h3 className="text-lg lg:text-xl text-stone-600">
+                <h3 className="text-lg lg:text-xl font-semibold text-stone-600">
                   Accompagnante à l'autonomie
                 </h3>
               </div>
@@ -41,7 +41,7 @@ export default function HeroSection() {
 
             <AnimatedTextBlock delay={0.6}>
               <p className="text-lg text-stone-600 leading-relaxed max-w-xl">
-                Accompagnement thérapeutique personnalisé selon l'approche de Laurent Martinez pour vous aider à retrouver sérénité et autonomie émotionnelle.
+                Accompagnement thérapeutique personnalisé selon l'approche de Laurent Martinez pour vous aider à retrouver votre autonomie émotionnelle et relationnelle ainsi qu'une nouvelle sérénité.
               </p>
             </AnimatedTextBlock>
 
