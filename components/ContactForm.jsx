@@ -42,23 +42,37 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+  
     if (!validateForm()) return;
-    
+  
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
-      setFormData({ nom: '', prenom: '', email: '', telephone: '', message: '' });
+  
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+  
+      const result = await res.json();
+  
+      if (res.ok) {
+        setFormData({ nom: '', prenom: '', email: '', telephone: '', message: '' });
+        alert('Message envoyé !');
+      } else {
+        alert(result.error || 'Erreur lors de l’envoi');
+      }
+    } catch (err) {
+      alert('Erreur réseau');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
+
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
