@@ -17,6 +17,7 @@ const navItems = [
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('accueil');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,11 +97,39 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="sm"
-              className="text-stone-700"
+              className="text-emerald-600"
+              onClick={() => setMobileOpen(!mobileOpen)}
             >
               Menu
             </Button>
           </div>
+          {mobileOpen && (
+            <div className="fixed inset-0 z-40 bg-black/40" onClick={() => setMobileOpen(false)}>
+              <div
+                className="absolute top-16 right-4 bg-white rounded-xl shadow-lg p-4 flex flex-col space-y-2"
+                onClick={e => e.stopPropagation()}
+              >
+                {navItems.map((item) => (
+                  <Button
+                    key={item.href}
+                    variant={activeSection === item.href.slice(1) ? "default" : "ghost"}
+                    size="sm"
+                    onClick={() => {
+                      scrollToSection(item.href);
+                      setMobileOpen(false);
+                    }}
+                    className={`transition-all duration-300 rounded-2xl ${
+                      activeSection === item.href.slice(1)
+                        ? 'bg-emerald-600 text-white shadow-md'
+                        : 'text-stone-700 hover:text-emerald-700 hover:bg-emerald-50'
+                    }`}
+                  >
+                    {item.label}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </motion.nav>
