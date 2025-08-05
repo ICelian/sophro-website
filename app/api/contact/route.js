@@ -9,7 +9,7 @@ export async function POST(req) {
   try {
     const { data: mailData, error } = await resend.emails.send({
       from: 'Éveil à soi <contact@mailer.xn--eveil--soi-m4a.com>', 
-      to: ['m.lopez253@laposte.net'],
+      to: ['maria.lopez3101@laposte.net'],
       subject: `Nouveau message de ${prenom} ${nom}`,
       html: `
         <p><strong>Nom:</strong> ${nom}</p>
