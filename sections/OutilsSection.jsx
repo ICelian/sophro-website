@@ -23,7 +23,7 @@ export default function OutilsSection() {
         Les émotions sont comme les feuilles d'un arbre : si on les écoute, elles nous ramènent à la même racine (il peut en exister deux, parfois trois, mais guère plus)
       </p>
       <p>
-        C'est dans cette racine, qu'on appelle "égo" ou "identité virtuelle", que se situe le fondement de tes schémas de répétition : les répétitions sont un mécanisme intelligent qui te remettent dans ta prison d'enfance jusqu'à ce que tu apprennent à en sortir.
+        C'est dans cette racine, qu'on appelle "égo" ou "identité virtuelle", que se situe le fondement de tes schémas de répétition : les répétitions sont un mécanisme intelligent qui te remettent dans ta prison d'enfance jusqu'à ce que tu apprennes à en sortir.
       </p>
       <p>
         Cette mise en conscience de la cause de tes émotions va faciliter la gestion de tes émotions (en les vivant à l'endroit), faciliter ta capacité à mettre de la distance entre tes émotions (qui ne parlent que de toi) et la situation qui les a déclenchées et t'aider à agir autrement et de façon plus puissante.
@@ -74,7 +74,7 @@ export default function OutilsSection() {
         De plus, la distance et le manque de temps sont la règle générale dans notre société occidentale : cet inconvénient est en parti supprimé.
       </p>
       <p>
-        J'ai conscience que certaines personnes seront malgré tout gênés de ne pas avoir la personne en face, dans un cabinet comme il se fait classiquement. Inversement ce sera un avantage pour d'autres. C'est ainsi.
+        J'ai conscience que certaines personnes seront malgré tout gênées de ne pas avoir la personne en face, dans un cabinet comme il se fait classiquement. Inversement ce sera un avantage pour d'autres. C'est ainsi.
       </p>
       <p>
         Je transmets malgré tout une vidéo dans mes retours de mails afin de me présenter ainsi que ma méthode de travail.

@@ -7,12 +7,12 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Maria LOPEZ - Aidante en écoute émotionnelle et sophrologie",
+  title: "Maria LOPEZ - Aidante en écoute émotionnelle",
   description: "Accompagnement thérapeutique personnalisé selon l'approche de Laurent Martinez. Aide pour stress, anxiété, confiance en soi, gestion émotionnelle. Séances d'audio-thérapie à 45€.",
   keywords: "sophrologie, thérapie, écoute émotionnelle, stress, anxiété, confiance en soi, Laurent Martinez, audio-thérapie",
   author: "Maria LOPEZ",
   openGraph: {
-    title: "Maria LOPEZ - Aidante en écoute émotionnelle et sophrologie",
+    title: "Maria LOPEZ - Aidante en écoute émotionnelle",
     description: "Accompagnement thérapeutique personnalisé pour votre bien-être émotionnel",
     type: "website",
   },

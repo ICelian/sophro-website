@@ -45,7 +45,7 @@ export default function ParcoursSection() {
         A l'aide de ses outils de conscience, tu pourras transcender l'origine de tes émotions par des décisions et des actions qui vont modifier ta vie et révéler la puissance de ton être.
       </p>
       <p>
-        Plus aligné(e) avec qui tu es, tu en éprouvera une plus grande sérénité.
+        Plus aligné(e) avec qui tu es, tu en éprouveras une plus grande sérénité.
       </p>
       <p>
         Je t'accompagne dans ce changement tout en préservant ta souveraineté.
